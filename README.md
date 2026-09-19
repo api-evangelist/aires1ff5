@@ -1,4 +1,4 @@
-# Aires1ff5
+# Aires (IRIS Xiamen Science)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,5 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aires1ff5 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/aires1ff5
+Aires is the EquityZen listing name for 爱睿思（厦门）科技有限公司 — IRIS (Xiamen) Science Co., Ltd. (ISC), a contact-lens research, development and ODM/OEM manufacturing company founded in 2020 in Tong'an District, Xiamen, China, built as the captive supply chain of the moody colour-contact-lens brand. It is a physical-goods manufacturer with no developer program, API, SDK or machine-readable specification; this profile records that absence.
+- https://www.iris-amoi.com/

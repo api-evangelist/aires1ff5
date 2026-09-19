@@ -1,17 +1,71 @@
 aid: aires1ff5
-name: Aires1ff5
-description: 'Aires1ff5 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: Aires (IRIS Xiamen Science)
+description: >-
+  Aires is the EquityZen listing name for 爱睿思（厦门）科技有限公司 — IRIS (Xiamen) Science Co., Ltd.
+  (ISC), a contact-lens research, development and manufacturing company founded in 2020 in Tong'an
+  District, Xiamen, China. It runs a fully automated colour contact lens factory (22,500 m² phase-one
+  plant, RMB 600 million-plus investment) with in-house-designed equipment, automated optical inspection
+  and sterile filling, and sells 38% and 55%
+  water-content daily and semi-annual clear and colour lenses as ODM/OEM contract manufacturing —
+  lens and pattern design, licensing support, logistics — to consumer brands. Built as the captive
+  supply chain of the moody colour-lens brand, it holds high-tech enterprise certification and 18
+  patents, and closed a RMB 100 million-plus B+ round led by Qianqi Capital in March 2026. It is a
+  physical-goods manufacturer: iris-amoi.com is a Chinese-language brochure site with no developer
+  program, API, SDK, webhook surface or machine-readable specification of any kind.
 url: https://raw.githubusercontent.com/api-evangelist/aires1ff5/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
-x-tier-reason: harvest
+x-tier-reason: no-api-surface
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: >-
+  iris-amoi.com is a brochure site (ASP.NET WebForms, ICP 闽ICP备2023002281号-1). Every page in its
+  sitemap is marketing copy; there is no developer, docs or API subdomain (api. and developer.
+  resolve to the same wildcard CNAME as the apex and answer with the same site), and the host
+  soft-404s — every unknown path, including a control path that cannot exist, returns HTTP 200
+  with a 5-byte "[404]" text/html body — so no 200 from this host is evidence of a document.
+  Contract discovery (openapi.json, swagger.json, api-docs, llms.txt, every /.well-known/ path,
+  agent-card.json and agent.json) all returned that same soft-404 stub.
+x-legal-name: 爱睿思（厦门）科技有限公司
+x-legal-name-en: IRIS (Xiamen) Science Co., Ltd.
+x-trading-name: ISC / Aires
+x-founded: '2020'
+x-headquarters: 39 Yinlu Avenue, Tong'an District, Xiamen, Fujian, China
+x-venue-listings:
+- venue: EquityZen
+  url: https://equityzen.com/company/aires1ff5
+  status: 403
+  note: >-
+    Secondary-market share listing and the source of the harvest entry (Akamai returns 403 to
+    non-browser clients; the archived copy carries the description "a high-tech enterprise
+    specializing in the research, development, manufacturing, and sales of contact lenses",
+    founded 2020, and the ISC / 爱睿思（厦门）科技有限公司 logo that resolved the identity). Recorded
+    here rather than as a common[] Website pointer — a trading-venue listing is a third party's page
+    about the company, not the company's own web presence (roadmap#56).
+x-name-collision:
+- name: American Aires Inc. (airestech.com)
+  note: >-
+    An unrelated Canadian-listed maker of EMF-modulation consumer devices trades as Aires Tech.
+    It is NOT this company; nothing from airestech.com is attributed here.
+- name: Aires Mateus
+  note: >-
+    A Portuguese architecture practice that EquityZen's press-mention widget surfaces under the
+    name. Unrelated.
 specificationVersion: '0.20'
 created: '2026-09-19'
 modified: '2026-09-19'
+image: https://www.iris-amoi.com/upload/img/20230424105439.png
 tags:
 - Company
+- Contact Lenses
+- Manufacturing
+- Medical Devices
+- Vision Care
+- Optics
+- Consumer Goods
+- ODM
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +73,43 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aires1ff5-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aires1ff5
+  url: https://www.iris-amoi.com/
+- type: About
+  url: https://www.iris-amoi.com/aboutus.aspx?ClassID=2
+- type: Partners
+  url: https://www.iris-amoi.com/partner.aspx?ClassID=5
+- type: Support
+  url: https://www.iris-amoi.com/Contact.aspx?ClassID=7
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    IRIS (Xiamen) Science is a contact-lens factory selling ODM/OEM manufacturing to consumer brands;
+    its only web presence, iris-amoi.com, is a Chinese-language ASP.NET brochure site whose every
+    non-page path — openapi.json, llms.txt, all eight /.well-known/ documents and a control path that
+    cannot exist — returns the same 200 soft-404 stub "[404]", and no api./developer. host, GitHub org
+    or package exists.
+  evidence:
+  - url: https://www.iris-amoi.com/
+    status: 200
+  - url: https://www.iris-amoi.com/sitemap.xml
+    status: 200
+  - url: https://www.iris-amoi.com/openapi.json
+    status: 200
+  - url: https://www.iris-amoi.com/llms.txt
+    status: 200
+  - url: https://www.iris-amoi.com/.well-known/agent-card.json
+    status: 200
+  - url: https://www.iris-amoi.com/this-path-cannot-exist-x9z
+    status: 200
+  - url: https://equityzen.com/company/aires1ff5
+    status: 403
+  checked: '2026-09-19'
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3

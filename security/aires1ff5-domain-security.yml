@@ -1,0 +1,24 @@
+generated: '2026-09-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts (probe-domain-security.py, DNS fields re-verified by hand with dig)
+note: >-
+  iris-amoi.com is a CNAME at the apex (iris-amoi.com -> iris-amoi.com.qzkey.com -> yd3.by-44kqk.ty3w.net),
+  so `dig +short <type>` returns the CNAME chain for every record type and probe-domain-security.py
+  initially recorded dnssec: true and two CAA "records" that were in fact CNAME targets. Re-verified:
+  no DS record at the parent, no DNSKEY, no CAA, no _dmarc TXT. Values below are the corrected ones.
+hosts:
+- host: www.iris-amoi.com
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Nov 12 12:45:05 2026 GMT
+  hsts: null
+  server: Microsoft-IIS/8.5
+  http_plain_served: true
+  note: Plain http:// is served without redirect to https://; no Strict-Transport-Security header.
+domains:
+- domain: iris-amoi.com
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: 'v=spf1 ip4:183.251.83.28 ip4:218.5.71.34 ip4:183.251.83.30 include:spf.mail.qq.com ~all'
+  dmarc: false

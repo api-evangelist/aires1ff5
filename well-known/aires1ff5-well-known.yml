@@ -1,0 +1,180 @@
+generated: '2026-09-19'
+method: probed
+source: live GET of each path on every host apis.yml knows (registrable domain + www); the site has no API, docs
+  or MCP host
+note: 'The host soft-404s: every unknown path returns HTTP 200 text/html with a 5-byte body "[404]", including the
+  control path /this-path-cannot-exist-x9z. No path returned a real document, so NO WellKnown/SecurityTxt/LLMsTxt/AgentCard
+  pointer is emitted from this probe — a 200 that is a soft-404 stub is a miss, not a document.'
+hosts:
+- host: iris-amoi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/api-catalog
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/agent.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /llms.txt
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /openapi.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /swagger.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /this-path-cannot-exist-x9z
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+- host: www.iris-amoi.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/openid-configuration
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/api-catalog
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/agent-card.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /.well-known/agent.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /llms.txt
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /openapi.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /swagger.json
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
+  - path: /this-path-cannot-exist-x9z
+    status: 200
+    content_type: text/html
+    bytes: 5
+    file: null
+    document: false
+    note: soft-404 stub body "[404]"
