@@ -64,5 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Aires is the EquityZen listing name for 爱睿思（厦门）科技有限公司 — IRIS (Xiamen) Science Co., Ltd. (ISC), a contact-lens research, development and ODM/OEM manufacturing company founded in 2020 in Tong'an District, Xiamen, China, built as the captive supply chain of the moody colour-contact-lens brand. It is a physical-goods manufacturer with no developer program, API, SDK or machine-readable specification; this profile records that absence.
-- https://www.iris-amoi.com/
+Aires is the EquityZen listing name for 爱睿思（厦门）科技有限公司 — IRIS (Xiamen) Science Co., Ltd. (ISC), a contact-lens research, development and manufacturing company founded in 2020 in Tong'an District, Xiamen, China. It runs a fully automated colour contact lens factory (22,500 m² phase-one plant, RMB 600 million-plus investment) with in-house-designed equipment, automated optical inspection and sterile filling, and sells 38% and 55% water-content daily and semi-annual clear and colour lenses as ODM/OEM contract manufacturing — lens and pattern design, licensing support, logistics — to consumer brands. Built as the captive supply chain of the moody colour-lens brand, it holds high-tech enterprise certification and 18 patents, and closed a RMB 100 million-plus B+ round led by Qianqi Capital in March 2026. It is a physical-goods manufacturer: iris-amoi.com is a Chinese-language brochure site with no developer program, API, SDK, webhook surface or machine-readable specification of any kind.
+
+**Areas:** Company · Contact Lenses · Manufacturing · Medical Devices · Vision Care · Optics · Consumer Goods · ODM · China
+
+## Aires (IRIS Xiamen Science) on APIs.io
+
+Everything profiled for Aires (IRIS Xiamen Science) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aires1ff5/](https://apis.io/providers/aires1ff5/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Aires1Ff5 Domain Security](https://apis.io/security/aires1ff5/aires1ff5-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.iris-amoi.com/)
+- [Support](https://www.iris-amoi.com/Contact.aspx?ClassID=7)
+
+## API Evangelist rating
+
+**Kin Score 4.7** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aires1ff5/](https://apis.io/providers/aires1ff5/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Aires (IRIS Xiamen Science): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aires1ff5/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
